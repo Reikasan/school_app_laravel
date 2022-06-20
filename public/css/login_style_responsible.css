@@ -1,0 +1,73 @@
+/* @media screen and (max-width: 750px) {
+    div.mail-header p {
+        top: -1rem;
+    }
+
+    div.container {
+        width: 80%;
+    }
+} 
+
+@media screen and (max-width: 600px)  {
+    .client-logo img {
+        width: 30%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .back {
+        margin-top: 2rem;
+    }
+
+    div.message-container {
+        margin-top: 0;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .success {
+        margin: 0 0 0.5rem;
+    }
+    .form-group {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .container.mail {
+        width: 80%;
+    }
+
+    .login-form .btn[type='submit'] {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav .logo {
+        width: 60%;
+        overflow-wrap: break-word;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        font-size: 2.5rem;
+    }
+
+    .container {
+        margin-top: 2rem;
+    }
+    
+    .container.mail h2{
+        font-size: 2rem;
+    }
+    
+    .container.mail h3{
+        font-size: 1.6rem;
+    }
+
+    div.mail-contents p {
+        font-size: 1.3rem;
+    }
+}  */

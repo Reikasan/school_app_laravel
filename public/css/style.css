@@ -1,0 +1,300 @@
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-weight: 400;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.container {
+    overflow-wrap: normal;
+}
+.alert.hide {
+    display: none;
+}
+/* .main {
+    width: 80vw;
+    height: 90%;
+    overflow-y: auto;
+    position: fixed;
+    right: 0;
+} */
+
+/* .btn {
+    border: solid 1px #000;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: border .5s;
+    text-align: center;
+    cursor: pointer;
+    padding: 1px;
+} */
+
+.btn:hover {
+    border: 1px solid #000;
+
+}
+
+.btn:active {
+    position: relative;
+    top: 2px;
+}
+
+.closeBtn {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+
+/* input[type="submit"] {
+    background-color: rgb(239, 239, 239);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+} */
+.img-container img{
+    border-radius: 50%;
+}
+/* navigation */
+/* nav {
+    display: flex;
+    padding: 0 10px;
+    height: 80px;
+    font-size: 15px;
+    background-color: #fff;
+    border-bottom: solid 1px #413F42;
+} */
+nav.top-nav {
+    border-bottom: solid 1px #413F42;
+}
+
+nav a {
+    color: #16003B;
+    text-decoration: none;
+}
+nav .logo {
+    margin-top: 10px;
+}
+nav .logo a {
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    padding: 20px;
+}
+
+.nav-item {
+    font-size: 30px;
+}
+
+/* MENU */
+li.list-group-item a.list-group-item-action, button.accordion-button {
+    font-size: 20px;
+    padding-left: 15px;
+    color: var(--bs-list-group-action-color);
+    text-decoration: underline;
+}
+div.accordion-body a.list-group-item-action {
+    font-size: 15px !important;
+    padding-left: 50px !important;
+    text-decoration: none;
+}
+button.accordion-button:hover {
+    z-index: 1;
+    color: var(--bs-list-group-action-hover-color);
+    text-decoration: none;
+    background-color: var(--bs-list-group-action-hover-bg);
+}
+#students.accordion {
+    --bs-accordion-btn-padding-x: unset;
+}
+
+/* STUDENT.PHP */
+.student.container {
+    position: relative;
+}
+#studentInfoLink {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    background-color: #fff;
+    opacity: .8;
+}
+#studentInfoLink button.btn-light {
+    position: absolute;
+    right: 0;
+    top: -15px;
+    opacity: 1;
+    z-index: 20;
+}
+
+#studentMenu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 100%;
+    text-align: end;
+}
+#actionIcons {
+    font-size: 2rem;
+    border-top: solid 1px #16003B;
+    border-bottom: solid 1px #16003B;
+}
+#actionIcons a {
+    color: #16003B;
+}
+#next {
+    background-color: #16003B;
+    color: #fff;
+    padding: 10px 20px;
+}
+a.lessons {
+    border: solid 1px #16003B;
+    border-radius: 5px;
+    height: 16.66666667vw;
+    text-align: center;
+    padding-top: 5vw;
+    position: relative;
+    color: #16003B;
+    text-decoration: none;
+}
+a.payed::before {
+    content: "PAYED";
+    height: 5vw;
+    width: 15.5vw;
+    color: #fff;
+    position: absolute;
+    background-color: #F73D93;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 4px;
+}
+a.lessons.done {
+    opacity: .7;
+    background-color: #aaa;
+}
+div.student button.nav-link {
+    font-size: 1.3rem;
+}
+
+/* TABLE */
+div.calendar table {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 10px;
+}
+div.calendar table#main-calendar-frame > tbody > tr {
+    height: 100px;
+}
+table tr#week {
+    height: 20px !important;
+}
+/* ALL_STUDENT.PHP */
+
+/* FOOTER NAV */
+footer {
+    margin-bottom: 100px;
+}
+#footerNav {
+    background-color: #413F42;
+    position: fixed;
+    bottom: 0;
+    padding: 20px 0;
+}
+#footerNav a {
+    color: #F73D93;
+}
+#footerNav i {
+    font-size: 25px;
+}
+footer .copyright{
+    margin: 30px 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* PAYINFO.PHP */
+#payMonth button.accordion-button.name {
+    background-color: #ddd;
+}
+#payMonth div.accordion-body div.row {
+    font-size: 14px;
+}
+#payMonth .payforThisMonth {
+    width: 20% !important;
+    display: inline-block;
+}
+
+/* forgot.php */
+h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+/* .back {
+    font-size: 15px;
+    margin: 40px 0 10px 10px;
+} */
+
+/* EMAIL.PHP */
+.receive-date {
+    font-size: 10px;
+}
+/* div.mail-header {
+    border-bottom: solid 1px #ddd;
+    position: relative;
+    padding: 1rem;
+}
+
+div.mail-header p {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    color: #666;
+}
+
+div.mail-contents {
+    padding: 5rem 1rem;
+}
+
+div.mail-contents p {
+    font-size: 1.5rem;
+}
+
+div.link {
+    padding: 5rem 2rem;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    text-align: center;
+}
+*/
+div.mail-footer {
+    font-size: 13px;
+}
+
+
+
