@@ -1,18 +1,16 @@
 <!doctype html>
 <html>
 <head>
-    <title>School APP</title>
+    <title>@yield('title')</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex,nofollow">
     <meta name="description" content="This site is a sample for Reservation Management System and its built with HTML, CSS, Javascript and PHP.">
-    
-
-    
+        
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/responsible.css')}}">
-    <link rel="stylesheet" href="{{asset('css/login_style.css')}}">
-    <link rel="stylesheet" href="{{asset('css/login_style_responsible.css')}}">
+    {{-- <link rel="stylesheet" href="{{asset('css/login_style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/login_style_responsible.css')}}"> --}}
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,7 +57,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/script.js"></script>
+<script src="{{asset('js/script.js')}}"></script>
 </body>
     
 </html>

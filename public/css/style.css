@@ -29,6 +29,8 @@ a {
 
 .container {
     overflow-wrap: normal;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 .alert.hide {
     display: none;
