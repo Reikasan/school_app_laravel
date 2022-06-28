@@ -16,9 +16,9 @@
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <div class="list-group list-group-flush">
-                    <a class="list-group item list-group-action" href="#">13:00 Reika Akuzawa</a>
-                    <a class="list-group item list-group-action" href="#">16:00 Reika Akuzawa</a>
-                    <a class="list-group item list-group-action" href="#">17:00 Reika Akuzawa</a>
+                    @foreach ($lessons as $lesson)
+                        <a class="list-group item list-group-action" href="#">{{$lesson->start_time}} {{$lesson->student_id->name}}</a>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -26,15 +26,15 @@
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Sat.11.6
+                {{$lesson->date}}
             </button>
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <div class="list-group list-group-flush">
-                    <a class="list-group item list-group-action" href="#">13:00 Reika Akuzawa</a>
-                    <a class="list-group item list-group-action" href="#">16:00 Reika Akuzawa</a>
-                    <a class="list-group item list-group-action" href="#">17:00 Reika Akuzawa</a>
+                    @foreach ($lessons as $lesson)
+                        <a class="list-group item list-group-action" href="#">{{$lesson->start_time}} {{$lesson->student_id->name}}</a>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -42,15 +42,15 @@
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Sun.12.6
+                {{$lesson->date}}
             </button>
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <div class="list-group list-group-flush">
-                    <a class="list-group item list-group-action" href="#">13:00 Reika Akuzawa</a>
-                    <a class="list-group item list-group-action" href="#">16:00 Reika Akuzawa</a>
-                    <a class="list-group item list-group-action" href="#">17:00 Reika Akuzawa</a>
+                    @foreach ($lessons as $lesson)
+                        <a class="list-group item list-group-action" href="#">{{$lesson->start_time}} {{$lesson->student_id->name}}</a>
+                    @endforeach
                 </div>
             </div>
         </div>
