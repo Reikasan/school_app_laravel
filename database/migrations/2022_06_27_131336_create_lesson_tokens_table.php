@@ -13,13 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('lessonTokens', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('payment_id')->unsigned();
-            $table->boolean('isUsed');
+        Schema::create('lesson_tokens', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('payment_id')->constrained();
+            $table->boolean('is_used');
             $table->timestamps();
-
-            $table->foreign('payment_id')->references('id')->on('payments')->onDelete('cascade');
         });
     }
 
