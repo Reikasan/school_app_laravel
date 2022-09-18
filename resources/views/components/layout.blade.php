@@ -39,7 +39,7 @@
     </nav>
     
 <div class="container">
-    @yield('content')
+    {{ $slot }}
     <footer>
         <div class="copyright text-center">
             <small>2021 &#64;Reika Akuzawa</small>
