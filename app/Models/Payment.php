@@ -14,7 +14,7 @@ class Payment extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function lessonToken(): HasMany
+    public function lessonTokens(): HasMany
     {
         return $this->hasMany(LessonToken::class, 'lesson_token');
     }
