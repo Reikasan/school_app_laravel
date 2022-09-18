@@ -35,6 +35,15 @@ a {
 .alert.hide {
     display: none;
 }
+
+.flex {
+    display: flex;
+}
+
+.flex div:nth-of-type(1) {
+    margin-right: 10px;
+}
+
 /* .main {
     width: 80vw;
     height: 90%;
